@@ -27,3 +27,64 @@ div {
     padding: 0px;
 
 }
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 6rem;
+}  
+
+ a {
+    text-decoration: none;
+    color: gray;
+}
+.project-image {
+    height: calc(100% - 0rem);
+    object-fit: cover;
+    background-image: url(../fcc-test-suite-template-master/bg.jpg);
+}
+img {
+    display: block;
+    width: 100%;
+  }
+.code::before::after {
+    color: rgb(240, 25, 25);
+    transition: color 0.3s ease-out;
+}
+.code{
+    display: none;
+}
+.projects-title {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: black;
+}
+
+.btn-show-all {
+    font-size: 2rem;
+    background: lightcoral;
+    border-radius: 20px;
+    color: #000;
+    padding: 10px;
+    transition: background 0.3s ease-out;
+      transition-property: background;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-out;
+      transition-delay: 0s;
+  }
+.project {
+    background: gray;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    height: inherit;
+    width: inherit;
+}
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: black;
+  }
