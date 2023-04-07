@@ -1,8 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+* :before, ::after {
+    box-sizing: inherit;
+}
+nav{
+    position:top ,fixed;
+    margin-top: 0;
+}
+nav ul li a:hover {
+    color: black;
+    transition: 1s;
+    
+}
+ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.3rem;
+    background: maroon;
+}
+ul li {
+    margin: 1%;
+    list-style: none;
+    
+}
 
-
-
-
-
+ul li a{
+    text-decoration: none;
+    color: white;
+}
 #welcome-section {
     display: flex;
     flex-direction: column;
@@ -88,3 +115,58 @@ img {
     padding: 10rem 2rem;
     background: black;
   }
+
+@media (max-width: 460px) {
+    nav{
+        position:top ,fixed;
+        margin-top: 0;
+    }
+
+  
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  #img-caption {
+    margin: 15px 0 5px 0;
+  }
+}
+
+@media (max-width: 460px) {
+    #img-caption {
+      font-size: 1.4rem;
+    }
+  }
+  
+  #headline {
+    margin: 50px 0;
+    text-align: center;
+  }
+  
+  ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  li {
+    margin: 16px 0;
+  }
+  
+  blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+  }
+  
